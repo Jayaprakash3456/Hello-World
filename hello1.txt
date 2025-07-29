@@ -1,2 +1,21 @@
 Git workflow is a set of guidelines that teams follow to collaborate on code using Git. A common workflow involves creating a new branch for each feature or bug fix, making changes, committing them, pushing the branch to the remote repository
 ii, and creating a pull request for code review and merging
+
+package java_int_prgms;
+
+public class count_specialchar {
+    public static void main(String[] args) {
+        String inputString = "Hello, World! @2024#, d$llar";
+        int specialCharacterCount = 0;
+
+        for (int i = 0; i < inputString.length(); i++) {
+            char c = inputString.charAt(i);
+            // Check if the character is not a letter or digit
+            if (!Character.isLetterOrDigit(c)) {
+                specialCharacterCount++;
+            }
+        }
+        System.out.println("Number of special characters: " + specialCharacterCount);
+    }
+}
+

@@ -1,1 +1,19 @@
+package java_int_prgms;
+
+public class count_specialchar {
+    public static void main(String[] args) {
+        String inputString = "Hello, World! @2024#, d$llar";
+        int specialCharacterCount = 0;
+
+        for (int i = 0; i < inputString.length(); i++) {
+            char c = inputString.charAt(i);
+            // Check if the character is not a letter or digit
+            if (!Character.isLetterOrDigit(c)) {
+                specialCharacterCount++;
+            }
+        }
+        System.out.println("Number of special characters: " + specialCharacterCount);
+    }
+}
+
 welcome to automation testing hello file 1
